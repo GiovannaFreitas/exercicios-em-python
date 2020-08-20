@@ -11,7 +11,11 @@ while price > 0:
      if price == 0:
          money = float(input('Money: R$ '))
          rest = (money - total)
-         print(f'TOTAL R$ {total:.2f}\nMONEY R$ {money:.2f}\nREST R$ {rest:.2f}')
+         print(f'TOTAL R$ {total:.2f}\nMONEY R$ {money:.2f}')
+         if rest < 0:
+            print (f'You can not buy all of it xD!!')
+         elif rest > 0:
+            print(f'Here is your change {rest}')
 #sexo = str(input('Informe seu sexo [M/F]: ')).strip().upper()[0]
 # # while sexo not in 'MmFf':
 #     sexo = str(input('Dados inválidos. Informe seu sexo: ')).strip().upper()[0]
